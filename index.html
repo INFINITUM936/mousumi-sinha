@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday Mousumi 🎀</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Cursor -->
+<div id="cursor">🐱</div>
+
+<!-- Stars Background -->
+<div class="stars-bg" id="stars"></div>
+
+<!-- Petals -->
+<div class="petals" id="petals"></div>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+  <div class="nav-logo">🐱 Mousumi's Birthday</div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <p class="big-title">— a very special day —</p>
+  <h1 class="hero-h1">Happy <span>Birthday</span></h1>
+  <div class="hero-name">Mousumi Sinha</div>
+  <p class="hero-sub">Today the whole world smiles a little brighter because you're in it. May every moment sparkle with joy and love! ✨</p>
+  <div class="scroll-down">↓ scroll for surprises ↓</div>
+</section>
+
+<!-- Animated Cake Section -->
+<div class="cake-zone reveal">
+  <div style="text-align:center;margin-bottom:2rem;">
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:600;margin-bottom:1rem;">Make a wish 🕯️</h2>
+  </div>
+  <div class="cake-wrap">
+    <div class="cake-star" style="top:-10px;left:-10px;animation-delay:.2s">✨</div>
+    <div class="cake-star" style="top:-5px;right:-8px;animation-delay:.7s">⭐</div>
+    <div class="cake-star" style="top:30px;left:-20px;animation-delay:1.2s;font-size:.9rem">✦</div>
+    <div class="cake-star" style="top:20px;right:-18px;animation-delay:1.6s;font-size:.9rem">✦</div>
+
+    <!-- Candle -->
+    <div class="candle" id="candle">
+      <div class="flame-glow" id="flameGlow"></div>
+      <div class="flame" id="flame"></div>
+    </div>
+
+    <!-- Cake Tiers -->
+    <div class="cake-t1">
+      <div class="drip"></div><div class="drip"></div>
+    </div>
+    <div class="cake-t2">
+      <div class="drip"></div><div class="drip"></div><div class="drip"></div>
+    </div>
+    <div class="cake-t3">
+      <div class="drip"></div><div class="drip"></div><div class="drip"></div><div class="drip"></div>
+    </div>
+  </div>
+  <button id="blowBtn" onclick="blowCandle()" class="blow-btn">🎂 Blow the candle!</button>
+  <p id="wishMsg" class="wish-msg"></p>
+</div>
+
+<!-- Cat Character Section -->
+<div class="cat-stage">
+  <div class="cat-bubble">Nyaa~ Happy Birthday Mousumi! 🎀🎂</div>
+  <div class="cat-outer" id="catMain">
+    <div class="cake-star" style="position:absolute;top:-8px;left:2px;font-size:1rem;animation-delay:.4s">✨</div>
+    <div class="cake-star" style="position:absolute;top:-2px;right:-2px;font-size:.9rem;animation-delay:1s">⭐</div>
+    <div class="cake-star" style="position:absolute;top:30px;left:-20px;font-size:.85rem;animation-delay:1.5s">✦</div>
+
+    <!-- Hat -->
+    <div style="margin:0 auto;width:76px;position:relative;z-index:3;">
+      <div class="c-hat-body"><div class="c-hat-stripe"></div><div class="c-hat-star">⭐</div></div>
+      <div class="c-hat-brim"></div>
+    </div>
+
+    <!-- Head -->
+    <div class="c-head">
+      <div class="c-ear l"></div><div class="c-ear r"></div>
+      <div class="c-ear-i l"></div><div class="c-ear-i r"></div>
+      <div class="c-eyes">
+        <div class="c-eye" id="eyeL"></div>
+        <div class="c-eye" id="eyeR" style="animation-delay:.4s"></div>
+      </div>
+      <div class="c-blush l"></div><div class="c-blush r"></div>
+      <div class="c-nose"></div>
+      <div class="c-mouth"></div>
+      <div class="c-whisker-g">
+        <div class="c-w wl1"></div><div class="c-w wl2"></div>
+        <div class="c-w wr1"></div><div class="c-w wr2"></div>
+      </div>
+    </div>
+
+    <!-- Body -->
+    <div class="c-body">
+      <div class="c-tummy"></div>
+      <div class="c-paw l"></div>
+      <div class="c-paw r"></div>
+      <div class="c-tail"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Walking Cats Strip -->
+<div class="walk-strip">
+  <div class="walk-cat" id="wc1">🐱</div>
+  <div class="walk-cat" id="wc2">🐾</div>
+</div>
+
+<!-- Message Section -->
+<section class="sec msg-sec">
+  <div class="sec-inner reveal">
+    <h2 class="sec-title">With all our love 💌</h2>
+    <div class="msg-card">
+      <p class="msg-text">
+        Dear Mousumi,<br><br>
+        On this beautiful day, we want you to know how incredibly special you are to all of us.
+        Your smile lights up every room, your kindness touches every heart, and your presence
+        makes every moment unforgettable.<br><br>
+        May this year bring you endless laughter, beautiful surprises, and every dream you've
+        been quietly carrying in your heart. You are so loved — more than words can ever say.<br><br>
+        Here's to you, today and every single day. 🌸🎂✨
+      </p>
+      <div class="msg-sign">With love, always 💕</div>
+    </div>
+  </div>
+</section>
+
+<!-- Bouncing Cats -->
+<div class="cats-row reveal">
+  <div class="mini-cat">🐱</div>
+  <div class="mini-cat">🐾</div>
+  <div class="mini-cat">🐱</div>
+  <div class="mini-cat">🐾</div>
+  <div class="mini-cat">🐱</div>
+</div>
+
+<!-- Gallery Section -->
+<section class="sec gal-sec">
+  <div class="sec-inner reveal">
+    <h2 class="sec-title">Our favourite photos 📸</h2>
+    <div class="gal-grid" id="gallery"></div>
+    <p class="gal-hint">Precious moments — forever in our hearts 🌷</p>
+  </div>
+</section>
+
+<!-- Games Section -->
+<section class="sec games-sec">
+  <div class="sec-inner reveal">
+    <h2 class="sec-title">🎉 Celebrate!</h2>
+    <div class="games-grid">
+      <!-- Game: Confetti Burst -->
+      <div class="game-card">
+        <div class="game-icon">🎊</div>
+        <h3 class="game-title">Confetti Burst!</h3>
+        <p class="game-desc">Click to celebrate and spread joy!</p>
+        <button class="game-btn" onclick="burstConfetti()">🎉 Celebrate!</button>
+        <p class="game-score">Bursts: <span id="burstCount">0</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Photo lightbox -->
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged photo" aria-hidden="true">
+  <button type="button" class="lightbox-close" aria-label="Close">&times;</button>
+  <img class="lightbox-img" src="" alt="">
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-cats">🐱 🎀 🐾</div>
+  <div class="footer-title">Happy Birthday, Mousumi!</div>
+  <p class="footer-text">Made with lots of love, purrs & pastel dreams 🌸</p>
+</footer>
+
+<!-- Scripts -->
+<script src="script.js"></script>
+</body>
+</html>
