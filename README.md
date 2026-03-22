@@ -1,4 +1,4 @@
-# 🎉 Mousumi's Premium Birthday Website
+# 🎉 Mousumi's Birthday Website
 
 An advanced, interactive birthday celebration website for Mousumi Sinha with stunning animations, effects, and engaging features.
 
